@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="input-section">
+      <label for="mathGrade">Math Grade:</label>
+      <input type="number" id="mathGrade" required>
+      <label for="englishGrade">English Grade:</label>
+      <input type="number" id="englishGrade" required>
+      <button id="submitGrades">Submit</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Math</th>
+          <th>English</th>
+          <th>Average</th>
+        </tr>
+      </thead>
+      <tbody id="gradeTableBody">
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Average</td>
+          <td id="mathColumnAverage">0</td>
+          <td id="englishColumnAverage">0</td>
+          <td id="overallAverage">0</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
